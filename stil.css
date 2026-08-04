@@ -1,0 +1,291 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    url("https://cdn.pixabay.com/photo/2023/07/15/10/52/bread-8128550_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: #b5651d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('https://source.unsplash.com/1600x500/?bakery') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.hero-section button {
+    background-color: #f0ad4e;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Nove CSS klase za funkcionalnosti */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.gallery-image {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.toggle-button {
+    background-color: #b5651d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #a55b1a;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-quantity {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.vrijeme {
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Izmjene za hover efekat */
+.product .price-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Izmjena za textarea u kontakt formi */
+.comment-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Stil za radno vrijeme */
+#radnoVrijeme {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.comment-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px;
+    height: 30px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 6px;
+}
+
+/* Stilovi za adresu */
+.address-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.address-info h3 {
+    color: #b5651d;
+    margin-bottom: 15px;
+}
+
+.address-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Stilovi za posebnu ponudu */
+.special-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.special-offer-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.special-offer-item h4 {
+    color: #b5651d;
+    margin: 10px 0;
+}
+
+.special-offer-item p {
+    color: #666;
+}
