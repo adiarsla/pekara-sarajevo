@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pekara SARAJEVO</h1>
+        <nav>
+            <a href="pocetna.html">Početna</a>
+            <a href="o-nama.html">O nama</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h2>Ostavite komentar</h2>
+        <form id="contactForm" class="comment-form">
+            <div class="form-group">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Vaša poruka:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit">Pošalji</button>
+        </form>
+
+        <h3>Kontakt email</h3>
+        <p>Za sve dodatne informacije javite nam se na: <a href="mailto:info@sarajevo.pekara.ba">info@sarajevo.pekara.ba</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Pekara SARAJEVO | Sva prava zadržana.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
