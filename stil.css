@@ -57,13 +57,13 @@ nav a {
 .hero-section button {
     background-color: #f0ad4e;
     border: none;
-    padding: 12px 28px;
+    padding: 15px 35px;
     color: white;
     cursor: pointer;
-    font-size: 1em;
-    border-radius: 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section button:hover {
