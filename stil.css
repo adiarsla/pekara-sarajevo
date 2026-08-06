@@ -64,6 +64,8 @@ nav a {
     border-radius: 25px;
     transition: all 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 300px;
 }
 
 .hero-section button:hover {
